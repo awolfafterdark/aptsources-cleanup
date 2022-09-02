@@ -243,7 +243,7 @@ def parse_args(args):
 		help=suppress_debug or
 			_("Load sources list files from this directory instead of the default "
 					"root-owned '{default:s}'. If omitted DIR defaults to '{const:s}'.")
-				.format(default='/etc/apt/sources.list*', const=debug_sources_dir))
+				.format(default='$PREFIX/etc/apt/sources.list*', const=debug_sources_dir))
 	dg.add_argument('--debug-choices-print', '--d-c-p',
 		action='store_true', default=False,
 		help=suppress_debug or
